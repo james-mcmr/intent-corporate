@@ -1,0 +1,148 @@
+/* ==|== media queries ======================================================
+   EXAMPLE Media Query for Responsive Design.
+   This example overrides the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+/*min-width: 480px*/
+@media only screen and (min-width: 30em) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+	
+	nav a{
+		float:left;
+		width:24.795918367346%;
+		padding:25px 0%;
+		margin-bottom:0;
+	}
+	
+	nav li:first-child a{ margin-left:0;  }
+	nav li:last-child  a{ margin-right:0; }
+	
+	nav ul li a span{
+		font-size:0.7em;
+		display:block;
+		font-weight:normal;
+	}
+	
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+	nav ul li{
+		display:inline;
+	}	
+	.oldie nav a{
+		margin:0 0.7%;		
+	}
+
+}
+
+/*min-width: 768px*/
+@media only screen and (min-width: 48em) {
+	
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+	#header-container{
+		-webkit-box-shadow:0 5px 10px #aaa;
+		   -moz-box-shadow:0 5px 10px #aaa;
+		        box-shadow:0 5px 10px #aaa;
+		background:#FFFFFF;        
+	}
+
+/* ============
+    WIDE: Menu
+   ============ */
+	
+	#title{
+		float:left;
+	}
+
+/* ============
+    WIDE: Main
+   ============ */
+
+	#main article{
+		float:left;
+	}
+
+	#main aside p{
+		width:72.244897959184%;
+		float:left;
+		font-size:1.25em;
+	}
+
+	#main section{
+		width:81.632653061224%;
+	}
+
+	#main section article{
+		width:380px;
+		margin-right:20px;
+	}
+
+
+}
+
+/*min-width: 980px*/
+@media only screen and (min-width: 61.250em) {
+	.wrapper{
+		width:980px; 
+		margin:0 auto;
+	}
+
+	#header-container{
+		background:$brandColor2;
+	}
+
+	header h1#title{
+		background: url(/img/logo.png) no-repeat left top; width:145px; height:24px;	
+	}
+
+	#main aside{
+		border-bottom:1px solid #CCCCCC;
+	}
+
+	#main aside, #main article{
+		margin: 0 0 0 0;
+	}
+
+	nav{
+		float:right;
+		width:73.469387755102%;
+	}
+
+	nav ul li a{
+		border-left: 1px solid $brandColor1;
+		text-align:left;
+		width:21.975510204081%;
+		padding:15px 0 15px 20px;
+		background:url(/img/nav-icons.png) no-repeat;
+	}
+
+	nav ul li a.brands{
+		background-position:top left;
+	}
+
+	nav ul li a.events{
+		background-position:top right;
+	}
+
+	nav ul li a.contacts{
+		background-position:bottom left;
+	}
+
+	nav ul li a.aboutus{
+		background-position:bottom right;
+	}
+
+
+
+	nav ul li:last-child a{
+		border-right:1px solid $brandColor1;
+	}
+
+}

@@ -1,0 +1,93 @@
+@import "partials/_variables";
+@import "functions/_responsive-font-size";
+@import "partials/_mixins";
+@import "partials/_normalize-mixins";
+@import "normalize";
+
+/* ==|== primary styles =====================================================
+   Author:
+   ========================================================================== */
+h1{
+	line-height:1em;
+	margin:0.65em 0em;
+}
+
+
+header h1#title{
+	background: url(/img/logo.png) no-repeat center; width:100%; height:24px;
+}
+
+
+#main aside{
+	background:$brandColor1;
+}
+
+
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav a{
+	display:block;
+	margin-bottom:10px;
+	padding:15px 0;
+	background:$brandColor2;
+	color:$anchorColor;
+	font-family: $fontFamilyAlternate;
+	font-size:1.25em;
+	text-decoration:none;
+	font-weight:bold;
+	line-height:0.8em;
+}
+
+nav a:hover, nav a:visited{
+	color:$anchorColor;
+}
+
+nav a:hover{
+	text-decoration:underline;
+}
+
+nav ul li a{
+	text-align:center;
+}
+
+#title{ color:$fontColorAlternate; }
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+#main{
+	padding:20px 0;
+}
+
+#main article h1{
+	font-size:2em;
+}
+
+#main article, #main aside{
+	margin:0 0.625em;
+}
+
+#main aside{
+	color:$fontColor;
+}
+
+#footer-container footer{
+	color:white;
+	padding:20px 0;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 #title{ padding-top:20px; }
+
+
+
+@import "partials/_media-queries";
+@import "helper";
+@import "partials/_print";
